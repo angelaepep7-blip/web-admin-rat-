@@ -1,4 +1,4 @@
-// api/devices.js
+// api/admin/devices.js
 const db = require('../../lib/db');
 
 module.exports = (req, res) => {
