@@ -1,4 +1,4 @@
-// login.js
+// api/login.js
 const db = require('../../lib/db');
 const bcrypt = require('bcryptjs');
 
