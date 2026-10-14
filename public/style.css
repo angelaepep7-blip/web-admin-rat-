@@ -1,0 +1,22 @@
+:root{--bg:#0a0a0f;--surface:#13131a;--border:#24242f;--primary:#6366f1;--text:#e5e7eb;--muted:#6b7280;--success:#10b981}
+*{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,'Inter',sans-serif}
+body{background:var(--bg);color:var(--text);min-height:100vh}
+#login{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:12px}
+#login input{padding:14px;width:280px;background:#1a1a24;border:1px solid var(--border);border-radius:10px;color:#fff}
+#login button{padding:12px 24px;background:var(--primary);border:none;border-radius:10px;color:#fff;font-weight:600;cursor:pointer;transition:transform .18s}
+#login button:active{transform:scale(.96)}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0}
+header h1{font-size:17px}
+header button{background:transparent;border:1px solid var(--border);padding:10px 16px;border-radius:10px;color:var(--text);cursor:pointer;transition:transform .15s}
+header button:active{transform:scale(.96)}
+main{padding:24px;max-width:1200px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-top:16px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:18px;transition:transform .2s,border-color .2s;cursor:pointer}
+.card:hover{transform:translateY(-3px);border-color:var(--primary)}
+.card .title{font-size:15px;font-weight:600;margin-bottom:8px}
+.card .meta{font-size:12px;color:var(--muted);font-family:monospace;padding:3px 0}
+.btn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:12px}
+.btn{background:linear-gradient(135deg,var(--primary),#8b5cf6);padding:14px;border:none;border-radius:10px;color:#fff;font-weight:600;cursor:pointer;transition:transform .18s;position:relative;overflow:hidden}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:scale(.97)}
+pre{background:#1a1a24;padding:12px;border-radius:8px;font-size:11px;white-space:pre-wrap;word-break:break-all;max-height:400px;overflow-y:auto;margin-top:8px}
